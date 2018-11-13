@@ -1,0 +1,18 @@
+op=sim
+
+echo Deseja fazer Backup?
+read op
+
+if test "$op" = "sim"
+then
+cp /Downloads | /Documentos | /"Área de Trabalho" | /Imagens /backupavaliacao
+echo fazendo download...
+
+fi
+
+if test "op" = "nao"
+then
+
+echo Finalizando Operacao...
+
+fi

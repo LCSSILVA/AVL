@@ -1,0 +1,25 @@
+op=sim
+FOTO="foto"
+PDF="pdf"
+link=link
+
+
+echo digite o link
+read link
+
+echo Deseja fazer Download?
+read op
+
+if test "$op" = "sim"
+then
+wget -c $link  
+echo fazendo download...
+
+fi
+
+if test "op" = "nao"
+then
+
+echo Operacao encerrada...
+wget $link
+fi
